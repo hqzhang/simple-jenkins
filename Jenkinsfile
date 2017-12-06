@@ -4,13 +4,13 @@ node('master'){
     try {
         stage('build'){
            checkout scm
-           sh "echo 'I am in build'"
+           sh "ls"
            sh "echo 'just for building'"
 
      }
     
         stage('test'){
-           sh "echo 'I am in test'"
+           sh "ls -al"
            sh "echo 'just for testing'"
         }
         stage('deploy'){
