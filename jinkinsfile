@@ -19,8 +19,8 @@ node('master'){
 
 
        }
-   } catch { 
-
+   } catch(error) { 
+       throw error
 
    } finally {
 
